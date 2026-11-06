@@ -1,3 +1,4 @@
+
 name: whatsapp_clone
 description: Flutter WhatsApp Clone
 publish_to: "none"
@@ -59,11 +60,13 @@ dev_dependencies:
   flutter_native_splash: ^2.3.2
   flutter_launcher_icons: ^0.13.1
 
-# The following section is specific to Flutter packages.
+dependency_overrides:
+  win32: ^5.5.5
+  archive: ^3.6.1
+
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/landing_img.png
     - assets/images/PENDING.png
